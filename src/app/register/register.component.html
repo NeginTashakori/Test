@@ -1,0 +1,41 @@
+<mat-card>
+    <mat-card-header>
+        <h1>User Registration</h1>
+    </mat-card-header>
+    <br>
+    <mat-card-content>
+        <form class="example-form" [formGroup]="registerform" (ngSubmit)="proceedregisteration()">
+            <div><mat-form-field class="example-full-width">
+                    <mat-label>UserName</mat-label>
+                    <input matInput formControlName="id">
+                </mat-form-field></div>
+            <div><mat-form-field class="example-full-width">
+                    <mat-label>Name</mat-label>
+                    <input matInput formControlName="name">
+                </mat-form-field></div>
+
+            <div><mat-form-field class="example-full-width">
+                    <mat-label>PassWord</mat-label>
+                    <input matInput formControlName="password" type="password">
+                </mat-form-field></div>
+            <div><mat-form-field class="example-full-width">
+                    <mat-label>Email</mat-label>
+                    <input matInput formControlName="email">
+                </mat-form-field></div>
+
+            <div>
+                <mat-radio-group formControlName="gender" aria-label="Gender">
+                    <mat-radio-button  value="male">Male</mat-radio-button>
+                    <mat-radio-button value="female">Famale</mat-radio-button>
+                </mat-radio-group>
+            </div>
+            <br>
+            <div>
+                <button mat-raised-button color="primary">Submit</button>
+                <a routerLink="/login" mat-button color="accent">Back to login</a>
+            </div>
+        </form>
+    </mat-card-content>
+
+</mat-card>
+

@@ -1,0 +1,39 @@
+<mat-card>
+    <mat-card-header>
+        <h1>Update User</h1>
+    </mat-card-header>
+    <br>
+    <mat-card-content>
+        <form class="example-form" [formGroup]="registerform">
+            
+            <div>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Role</mat-label>
+                    <mat-select formControlName="role">
+                        <mat-option value="">Select Role</mat-option>
+                        <mat-option *ngFor="let item of rolelist" [value]="item.code">
+                          {{item.name}}
+                        </mat-option>
+                      </mat-select>
+                </mat-form-field>
+            </div>
+
+
+            <div>
+                <mat-checkbox formControlName="isactive" class="example-margin">Active</mat-checkbox>
+            </div>
+            <br>
+            <div>
+                <button mat-stroked-button color="primary" type="submit" (click)="updateuser()">Update</button>
+                <button mat-stroked-button color="warn" type="submit" (click)="deleteuser()">Delete</button>
+
+
+                <!-- <button mat-dialog-delete  *ngIf="element.role!=='admin'" (click)="deleteuser(element.id)" mat-raised-button color="primary">delete</button> -->
+                  
+
+                <a mat-dialog-close mat-button color="accent">Close</a>
+            </div>
+        </form>
+    </mat-card-content>
+
+</mat-card>

@@ -1,0 +1,63 @@
+{
+  "user": [
+    {
+      "id": "negin",
+      "name": "negin",
+      "password": "negin",
+      "email": "negin@gmail.com",
+      "gender": "female",
+      "role": "admin",
+      "isactive": true
+    },
+    {
+      "id": "admin",
+      "name": "admin",
+      "password": "admin",
+      "email": "admin@gmail.com",
+      "gender": "male",
+      "role": "admin",
+      "isactive": true
+    },
+    {
+      "id": "mahdi",
+      "name": "bagheri",
+      "password": "mahdi",
+      "email": "mahdi@gmail.com",
+      "gender": "male",
+      "role": "staff",
+      "isactive": true
+    },
+    {
+      "id": "hamide",
+      "name": "hamide",
+      "password": "hamide",
+      "email": "hamide@gmail.com",
+      "gender": "female",
+      "role": "staff",
+      "isactive": true
+    },
+    {
+      "id": "alireza",
+      "name": "alireza",
+      "password": "alireza",
+      "email": "alireza@gmai.com",
+      "gender": "male",
+      "role": "",
+      "isactive": false
+    }
+  ],
+  "role": [
+    {
+      "code": "staff",
+      "name": "Jibiters"
+    },
+    {
+      "code": "quality",
+      "name": "publicUser"
+    },
+    {
+      "code": "admin",
+      "name": "Admin"
+    }
+  ]
+}
